@@ -1,0 +1,5 @@
+{
+  "name": "codespace",
+  "forwardPorts": [3000],
+  "postStartCommand": "cd /workspaces/IDE && python3 -m http.server 3000"
+}
