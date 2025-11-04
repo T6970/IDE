@@ -1,0 +1,112 @@
+:root {
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+  color: #222;
+  --card-color: #eee;
+  --nest-card-color: #ccc;
+  --button-press-color: #bbb;
+  --highlight-color: #08f;
+  --highlight-alt-color: #f80;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --card-color: #333;
+    --nest-card-color: #555;
+    --button-press-color: #444;
+    --highlight-color: #f80;
+    --highlight-alt-color: #08f;
+  }
+  body {
+    background-color: #222;
+    color: #fff;
+  }
+}
+
+a {
+  color: var(--highlight-color);
+}
+
+header {
+  background-color: var(--highlight-color);
+  margin: 0%;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+/* Classes */
+
+.card {
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: var(--card-color);
+  padding: 20px;
+  max-width: 700px;
+  border-style: hidden;
+  border-radius: 8px;
+}
+
+.nest {
+  background-color: var(--nest-card-color);
+}
+
+.altcard {
+  background-color: var(--highlight-alt-color);
+}
+
+.altlink {
+  color: var(--highlight-alt-color);
+}
+
+.center {
+  text-align: center;
+  justify-content: center;
+}
+
+.header {
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: var(--highlight-color);
+  padding: 20px;
+  max-width: 700px;
+  border-radius: 8px;
+}
+
+.button {
+  width: 60px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.toolbar button {
+  flex: 1;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Pseudoclass */
+
+button:hover {
+  background-color: var(--button-press-color);
+}
+
+button:active {
+  background-color: var(--highlight-color);
+}
